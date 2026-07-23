@@ -92,12 +92,16 @@ export default function ProductGrid() {
         aria-label="Best-selling products"
         tabIndex="0"
       >
-        {products.map((product) => {
+        {products.map((product, index) => {
           const primaryImage = product.variants[0].images[0];
           const alternateImage = product.variants[0].images[1];
 
           return (
-            <article key={product.id} className="product-card">
+            <article
+              key={product.id}
+              className="product-card"
+              style={{ '--stagger-index': index }}
+            >
               <div
                 className="product-media"
                 aria-label={`View ${product.name}`}

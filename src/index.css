@@ -79,6 +79,32 @@ a {
   position: relative;
 }
 
+.section-heading h1,
+.shop-all-link,
+.product-card {
+  animation: fade-in-up 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.section-heading h1 {
+  animation-delay: 200ms;
+}
+
+.shop-all-link {
+  animation-delay: 400ms;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .section-heading {
   display: flex;
   align-items: baseline;
@@ -177,6 +203,7 @@ a {
 .product-card {
   min-width: 0;
   scroll-snap-align: start;
+  animation-delay: calc(260ms + (var(--stagger-index, 0) * 80ms));
 }
 
 .product-media {
@@ -336,6 +363,12 @@ a {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .section-heading h1,
+  .shop-all-link,
+  .product-card {
+    animation: none;
+  }
+
   .product-media .product-image,
   .rail-control {
     transition: none;
