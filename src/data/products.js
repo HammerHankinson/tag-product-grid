@@ -4,7 +4,7 @@ export const products = [
     name: 'Professional',
     subtitle: 'Black Cabrio',
     price: 105,
-    badges: ['Best Seller'],
+    badges: ['New'],
     variants: [
       {
         id: 'black',
@@ -28,7 +28,7 @@ export const products = [
     name: 'Merrin',
     subtitle: 'Black Cabrio',
     price: 155,
-    badges: ['New', 'Best Seller'],
+    badges: ['New', 'Sale'],
     variants: [
       {
         id: 'black',
@@ -76,7 +76,7 @@ export const products = [
     name: 'Brenna',
     subtitle: 'Black Cabrio',
     price: 110,
-    badges: [],
+    badges: ['New'],
     variants: [
       {
         id: 'black',

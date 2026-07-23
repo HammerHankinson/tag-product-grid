@@ -1,7 +1,9 @@
+import ProductGrid from './components/ProductGrid';
+
 function App() {
   return (
     <main>
-      <h1>Best Sellers</h1>
+      <ProductGrid />
     </main>
   )
 }
