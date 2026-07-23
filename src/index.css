@@ -222,6 +222,7 @@ a {
     transition:
       opacity 180ms ease,
       transform 180ms ease;
+    mix-blend-mode: multiply; 
   }
 
   .product-image-alternate {
